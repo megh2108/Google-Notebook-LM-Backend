@@ -8,14 +8,14 @@ const documentRoutes = require("./routes/documentRoutes");
 const chatRoutes = require("./routes/chatRoutes");
 
 const app = express();
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 7000;
 
 // Middleware
 app.use(corsConfig);
 app.use(express.json());
 
 // Static file serving for PDFs
-app.use("/uploads", express.static(path.join(__dirname, "uploads"), {
+app.use("/api/uploads", express.static(path.join(__dirname, "uploads"), {
   setHeaders: (res, filePath) => {
     if (filePath.endsWith(".pdf")) {
       res.set("Content-Type", "application/pdf");

@@ -4,8 +4,8 @@
   "description": "Backend for NotebookLM Clone",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.3.0",
