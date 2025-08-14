@@ -13,7 +13,7 @@ app.use(corsConfig);
 app.use(express.json());
 
 // Static file serving for PDFs
-const uploadsPath = path.join(process.cwd(), "uploads"); // safer than __dirname for Vercel
+const uploadsPath = path.join(process.cwd(), "uploads"); 
 app.use(
   "/uploads",
   express.static(uploadsPath, {
