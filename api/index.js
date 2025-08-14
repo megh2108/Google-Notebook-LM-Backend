@@ -34,3 +34,5 @@ app.get("/api/health", (req, res) => res.json({ status: "OK", timestamp: new Dat
 
 // Start server
 // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+module.exports = app;
